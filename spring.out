@@ -1,0 +1,129 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.3.RELEASE)
+
+2016-03-22 13:26:17.773  INFO 11664 --- [           main] com.tbis.hello.Application               : Starting Application v0.1.0 on Jerry with PID 11664 (C:\Users\t_bis_000\Documents\EclipseProjects\SpringBoot-RESTfulTemplate\target\SpringBoot-RESTfulTemplate-0.1.0.jar started by t_bis_000 in C:\Users\t_bis_000\Documents\EclipseProjects\SpringBoot-RESTfulTemplate)
+2016-03-22 13:26:17.827  INFO 11664 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bff5ea4: startup date [Tue Mar 22 13:26:17 NZDT 2016]; root of context hierarchy
+2016-03-22 13:26:18.477  INFO 11664 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-03-22 13:26:19.475  INFO 11664 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-03-22 13:26:19.751  INFO 11664 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-03-22 13:26:19.752  INFO 11664 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.20
+2016-03-22 13:26:19.880  INFO 11664 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-03-22 13:26:19.880  INFO 11664 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2056 ms
+2016-03-22 13:26:20.807  INFO 11664 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-03-22 13:26:20.815  INFO 11664 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-03-22 13:26:20.816  INFO 11664 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-03-22 13:26:21.205  INFO 11664 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bff5ea4: startup date [Tue Mar 22 13:26:17 NZDT 2016]; root of context hierarchy
+2016-03-22 13:26:21.309  INFO 11664 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tbis.hello.HelloController.index()
+2016-03-22 13:26:21.311  INFO 11664 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-03-22 13:26:21.312  INFO 11664 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2016-03-22 13:26:21.351  INFO 11664 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-22 13:26:21.351  INFO 11664 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-22 13:26:21.410  INFO 11664 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-22 13:26:21.518  INFO 11664 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-03-22 13:26:21.573 ERROR 11664 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:343)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:739)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:472)
+	at org.apache.coyote.http11.Http11NioProtocol.start(Http11NioProtocol.java:81)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:237)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:186)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:149)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.tbis.hello.Application.main(Application.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53)
+	at java.lang.Thread.run(Unknown Source)
+
+2016-03-22 13:26:21.575 ERROR 11664 --- [           main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:237)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:186)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:149)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.tbis.hello.Application.main(Application.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:343)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:739)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:472)
+	at org.apache.coyote.http11.Http11NioProtocol.start(Http11NioProtocol.java:81)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	... 19 common frames omitted
+
+2016-03-22 13:26:21.584  INFO 11664 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2016-03-22 13:26:21.594  INFO 11664 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-boot-starter-web-1.2.3.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-boot-starter-1.2.3.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-boot-1.2.3.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-boot-autoconfigure-1.2.3.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-boot-starter-logging-1.2.3.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/jcl-over-slf4j-1.7.11.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/slf4j-api-1.7.11.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/jul-to-slf4j-1.7.11.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/log4j-over-slf4j-1.7.11.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/logback-classic-1.1.3.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/logback-core-1.1.3.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/snakeyaml-1.14.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-boot-starter-tomcat-1.2.3.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/tomcat-embed-core-8.0.20.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/tomcat-embed-el-8.0.20.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/tomcat-embed-logging-juli-8.0.20.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/tomcat-embed-websocket-8.0.20.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/jackson-databind-2.4.5.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/jackson-annotations-2.4.5.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/jackson-core-2.4.5.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/hibernate-validator-5.1.3.Final.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/validation-api-1.1.0.Final.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/jboss-logging-3.1.3.GA.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/classmate-1.0.0.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-core-4.1.6.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-web-4.1.6.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-aop-4.1.6.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/aopalliance-1.0.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-beans-4.1.6.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-context-4.1.6.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-webmvc-4.1.6.RELEASE.jar!/, jar:file:/C:/Users/t_bis_000/Documents/EclipseProjects/SpringBoot-RESTfulTemplate/target/SpringBoot-RESTfulTemplate-0.1.0.jar!/lib/spring-expression-4.1.6.RELEASE.jar!/]
+2016-03-22 13:26:21.594  INFO 11664 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enabled debug logging (start with --debug)
+
+
+2016-03-22 13:26:21.594 ERROR 11664 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Tomcat connector in failed state
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:157)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.tbis.hello.Application.main(Application.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53)
+	at java.lang.Thread.run(Unknown Source)
+
+2016-03-22 13:26:21.595  INFO 11664 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bff5ea4: startup date [Tue Mar 22 13:26:17 NZDT 2016]; root of context hierarchy
+2016-03-22 13:26:21.596  INFO 11664 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
